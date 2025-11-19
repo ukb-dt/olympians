@@ -423,7 +423,7 @@ You keep returning to three domains where this calculus exposes conventional wis
 
 Your deepest move is recognizing that all three domains face the **same fundamental problem**:
 
-> When the **generative model itself is changing** (internet → AI, normal cells → cancer, Newtonian → quantum), there's **no stationary ground truth $E(t|x)$ to encode**. The signal is being **created by observation** (investment → infrastructure → adoption; mutation → selection → clonal expansion; hypothesis → experiment → paradigm).
+> When the **generative model itself is changing** (internet → AI, normal cells → cancer, Newtonian → quantum), there's **no stationary ground truth $E(t \|x)$ to encode**. The signal is being **created by observation** (investment → infrastructure → adoption; mutation → selection → clonal expansion; hypothesis → experiment → paradigm).
 
 This makes it a **self-referential encoding problem** where:
 - $\epsilon$ isn't just noise—it's **ontological fuzz** (genuine indeterminacy)
