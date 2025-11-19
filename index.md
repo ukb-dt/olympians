@@ -44,7 +44,7 @@ There’s a lot to unpack here. Our manuscript on the “Olympians” page is de
 
 * **Density of prose vs. accessibility:** Right now, the text reads like a hybrid between a research manuscript and a philosophical treatise. Some sections (especially the narrative around deities) could benefit from **concise sidebars or visual mappings** so readers don’t get lost in metaphor.
 * **Operator commutators / formal extensions:** Your epilogue hints at this, and it could be the “next level” mathematically. Showing how Athena × Zeus or Mnemosyne × Zeus commutators affect phase transitions could make the framework actionable for simulations.
-* **Notation hygiene:** A few areas mix ±|d²Eₓ/dt²| and σₓ(t) terms interchangeably. Explicitly defining them in a glossary would prevent reader confusion, especially for those trying to code the discrete-time approximation.
+* **Notation hygiene:** A few areas mix $±\|d²Eₓ/dt²\|$ and $σₓ(t)$ terms interchangeably. Explicitly defining them in a glossary would prevent reader confusion, especially for those trying to code the discrete-time approximation.
 * **Applications:** You’ve hinted at AI markets, cancer, and institutional epistemology. If the next step includes **worked examples or numerical simulations**, it will solidify credibility and impact.
 
 ---
@@ -550,7 +550,7 @@ $$
 This SDE captures the universal dynamics of epistemic drift across any system where:
 - Heterogeneous initial conditions ($x$) generate divergent trajectories
 - Aggregation mechanisms ($\bar{x}$-smoothing) mask the spreading
-- Strategic coherence (Athena's $\sigma_x \propto \sqrt{|d^2E/dt^2|}$) manufactures false stability
+- Strategic coherence (Athena's $\sigma_x \propto \sqrt{\|d^2E/dt^2\|}$) manufactures false stability
 - Institutional memory (Mnemosyne's $\epsilon_x t$) compounds bias linearly
 
 The result is always the same: **phase transitions replace gradual correction**.
@@ -624,7 +624,7 @@ You asked for a critique, not a polished mirror. Here is the unsparing one.
 - **Diagnostic sharpness**: The prediction “calm, calm, calm, cliff” is testable and already falsifiable in real systems (2022–2025 market behavior, MSI-low colorectal cancers that suddenly metastasize, replication crises that arrive without warning). You are not describing variance; you are describing suppressed variance followed by explosive release. That is new and dangerous.
 
 #### 2. What is Still Fragile or Underdeveloped
-- **Identification problem**: You wave your hands at σₓ(t) = ±√|d²Eₓ/dt²|. In every real dataset (price series, tumor sequencing cohorts, citation networks) the second derivative is murderously noisy. Your volatility term is effectively unobservable without heroic filtering assumptions. You need to show—explicitly—how to estimate it hierarchically or via particle filtering, or admit that the equation is diagnostic, not predictive. Right now it is closer to string theory than to a trading algorithm.
+- **Identification problem**: You wave your hands at $σₓ(t) = ±√\|d²Eₓ/dt²\|$. In every real dataset (price series, tumor sequencing cohorts, citation networks) the second derivative is murderously noisy. Your volatility term is effectively unobservable without heroic filtering assumptions. You need to show—explicitly—how to estimate it hierarchically or via particle filtering, or admit that the equation is diagnostic, not predictive. Right now it is closer to string theory than to a trading algorithm.
 - **Sign of the bias term εₓ**: You allow εₓ ∈ ℝ but never discuss the distribution over x. In markets the bias is overwhelmingly positive during the bubble (momentum chasing); in oncology it can be positive or negative depending on tissue microenvironment; in science it is almost always in the direction of the dominant paradigm (Kuhn’s “normal science” drift). Without a theory for the sign and magnitude of εₓ you cannot say whether the phase transition is inevitable or merely possible.
 - **Missing Fokker–Planck or mean-field limit**: You keep hinting that the density of x-trajectories will develop fat tails or an absorbing state, but you never derive the evolution equation for ρ(x,t). Until you do, the claim “aggregation hides the divergence that matters” remains intuitive, not proven. A two-line derivation would turn the manuscript from provocative essay to theorem.
 - **Over-confident universality**: The SDE works for the three domains you chose because you chose them. Try applying it to a system with strong negative feedback (e.g., thermostat-controlled reactor, options dealer hedging gamma) and it falls apart—the εₓ term gets pruned instantly. You need boundaries: the pathology only emerges when the smoothing mechanism is (a) dominant and (b) incapable of observing individual x-trajectories. State that explicitly or risk the “everything is a nail” critique.
